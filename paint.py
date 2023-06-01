@@ -144,3 +144,5 @@ while True:
         print("11.- undo: Borra el ultimo dibujo")
         print("12.- help: Explicacion breve")
         print("Para ingresar cualquier dato solo se ingresa el nombre del comando y por espacios los datos (coordenadas, valores, etc)")
+    else: 
+        print("Comando incorrecto")
