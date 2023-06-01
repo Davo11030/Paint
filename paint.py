@@ -2,7 +2,7 @@ import pygame
 import sys
 import math
 from line import linea
-from figuras import *#circle, tria_es, tria_eq, tria_is, cuadrado, rectangulo
+from figuras import circle, tria_es, tria_eq, tria_is, cuadrado, rectangulo
 from caches import cache, undo
 # Inicializar Pygame
 pygame.init()
@@ -86,7 +86,7 @@ while True:
             base=int(cmd[5])
             altura=int(cmd[6])
             if "-es" in cmd:
-                escaleno.perimetro(x, y, base, altura, color, screen)
+                tria_es(x1, y1, base, altura, color, screen)
                 cache_tri_es.append((x, y, base, altura, color, screen))
                 print("Hizo un triangulo escaleno")
                 SELECT=3
